@@ -13,8 +13,8 @@ LABEL "com.github.actions.color"="green"
 LABEL "maintainer"="Scott Brenner <scott@scottbrenner.me>"
 
 RUN pip install cfn-lint --no-cache-dir
-RUN cfn-lint --update-specs
-RUN cfn-lint --update-iam-policies
+# RUN cfn-lint --update-specs
+# RUN cfn-lint --update-iam-policies
 
 COPY cfn-lint.json /cfn-lint.json
 COPY entrypoint.sh /entrypoint.sh
