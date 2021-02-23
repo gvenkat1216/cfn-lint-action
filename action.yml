@@ -1,9 +1,9 @@
-name: 'cfn-lint-action'
-author: 'Scott Brenner <scott@scottbrenner.me>'
+name: 'custom-cfn-lint-action'
+author: 'Venkat <gvenkat1216@gmail.com>'
 description: 'GitHub Action for CloudFormation Linter'
 runs:
   using: 'docker'
   image: 'Dockerfile'
 branding:
   icon: 'box'
-  color: 'yellow'
+  color: 'blue'
