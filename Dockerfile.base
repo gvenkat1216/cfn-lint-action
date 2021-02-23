@@ -1,0 +1,6 @@
+FROM python:3.9.2-alpine
+
+
+RUN pip install cfn-lint --no-cache-dir
+RUN cfn-lint --update-specs
+RUN cfn-lint --update-iam-policies
